@@ -16,20 +16,42 @@
                     <div class="text">
                         <strong>Mi querida Jamy.</strong>
                         <p>
-                            Te quiero muchoooooooooooooooooooooooooo  
-                            3 millones 
+                            Se que todo no ha sido facil, pero estoy muy feliz de estar a tu lado.
+                            Sere mi mejor version para ti, porque, estoy seguro que eres el amor de mi vida.
+                            Si es por mi, yo te daria cada pedacito de mi corazon para arreglar hasta el mas 
+                            minimo dolor que este en el tuyo.
+                            -------------------Te quiero mucho
                         </p>
                     </div>
                 </div>
             </div>
             <div class="heart"></div>
+            <!-- Contenedor de imágenes -->
+            <div class="image-container">
+                <img src="imagenes/snoopy.png" alt="Imagen descriptiva">
+                <img src="imagenes/imagen1.jpeg" alt="Imagen descriptiva">
+                <img src="imagenes/imagen2.jpeg" alt="Imagen descriptiva">
+                <img src="imagenes/imagen3.jpeg" alt="Imagen descriptiva">
+                <img src="imagenes/imagen4.jpeg" alt="Imagen descriptiva">
+                <img src="imagenes/imagen5.jpeg" alt="Imagen descriptiva">
+                <img src="imagenes/imgen6.jpg.avif" alt="Imagen descriptiva">
+
+            </div>
         </div>
     </div>
+
     <script>
-        const envelope = document.querySelector('.envelope-wrapper');
-        envelope.addEventListener('click', () => {
-            envelope.classList.toggle('flap');
-        });
+       const envelope = document.querySelector('.envelope-wrapper');
+const imageContainer = document.querySelector('.image-container');
+
+envelope.addEventListener('click', () => {
+    envelope.classList.toggle('flap');
+    if (envelope.classList.contains('flap')) {
+        imageContainer.style.display = 'flex'; // Mostrar imágenes al abrir
+    } else {
+        imageContainer.style.display = 'none'; // Ocultar imágenes al cerrar
+    }
+});
     </script>
 </body>
 </html>
